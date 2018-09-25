@@ -1,0 +1,32 @@
+Basic Information:
+-------------------
+
+-In each file last column represent acutual labels
+-Remaining columns represent feature values
+-Total Documents: 2225
+-word vector generated using Glove word vector representation
+-Document vector generated using averaging of word vectors present in that document.
+
+
+File description:
+------------------
+
+
+GloveDocVector_BBC_Normal_6B_50d.txt  :    	 No. of features are 50
+GloveDocVector_BBC_Normal_6B_100d.txt :		 No. of features are 100
+GloveDocVector_BBC_Normal_6B_200d.txt :		 No. of features are 200
+GloveDocVector_BBC_Normal_6B_300d.txt :		 No. of features are 300
+GloveDocVector_BBC_Normal_42B_300d.txt:		 No. of features are 300
+GloveDocVector_BBC_Normal_840B_300d.txt:	 No. of features are 300
+
+
+Here <number>B indicate Golve word vector representation is trained on <number> Billions token.
+
+
+
+Text file preprocessing
+-----------------------
+
+Stop word removal, Lemmatization (But not stemming), each word into lower case, remove speacial characters and numbers, remove white space
+
+

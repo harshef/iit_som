@@ -1,0 +1,5 @@
+In all files
+
+		First row gives information about data sets that is  #points, dimension, #cluster
+	   	Last column is for actial class labels
+		Remaining columns are for feature values

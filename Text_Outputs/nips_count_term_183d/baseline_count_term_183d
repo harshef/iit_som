@@ -1,0 +1,20 @@
+Doc shape :  (403L, 183L)
+Kmeans Siloutte score :  0.154965007282
+Kmeans PBM index :  8059.86958856
+Kmeans Dunn index :  0.179325615428
+-------------------------------------------------------------
+
+Hierarchical single Siloutte score :  0.129066740986
+Hierarchical single PBM index :  45.4532179719
+Hierarchical single Dunn index :  0.183764311648
+---------------------------------------------------------
+
+Hierarchical average Siloutte score :  0.144716386688
+Hierarchical average PBM index :  31.8706729472
+Hierarchical average Dunn index :  0.170172916647
+-------------------------------------------------------------
+
+Hierarchical complete Siloutte score :  0.112288565789
+Hierarchical complete PBM index :  40.7718759845
+Hierarchical complete Dunn index :  0.221864043465
+---------------------------------------------------------

@@ -1,0 +1,21 @@
+Total documents : 737
+No. of clusters : 5
+No. of features:  4613
+
+the file actual_bbc_sport_count_matrix.txt
+--------------------------------------------
+
+  	each document is represented in terms of term-count  features values
+	during fetch data exclude first row and first column
+
+the file actual_bbc_sport_actual_label.txt
+---------------------------------------------
+
+      	Exclude ist row during fetching
+	Ist column represent documnt no.
+	IInd coluumn represent actual labels
+	
+ 
+
+ 
+

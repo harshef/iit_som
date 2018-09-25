@@ -1,0 +1,8 @@
+- NIPS 2015 data does not contain actual labels.
+- Each file have different no. of features in terms of number of attributes.
+  Example:
+
+	<file_name_42B_300d.csv>    -> Here 300d means files conatins 300 attributes i.e. 300 no. of column
+   
+        
+

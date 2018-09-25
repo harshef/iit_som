@@ -1,0 +1,34 @@
+Basic Information:
+-------------------
+
+-In each file last column represent acutual labels
+-Remaining columns represent feature values
+-Total Documents: 2225
+-Vocab size : 9159
+
+
+
+File description:
+------------------
+
+
+BBC_count_terms.txt   :    	 Document vector generated using word count values in that document.
+BBC_tfidf_terms.txt   : 	 Document vector generated using tf-idf values in that document.
+
+
+        			   Here , tf=1+log(tf)
+
+
+
+Parameter used:
+-----------------
+
+Minimum document frequency=4
+
+
+Text file preprocessing
+-----------------------
+
+Stop word removal, Lemmatization (But not stemming), each word into lower case, remove speacial characters and numbers, remove white space
+
+
