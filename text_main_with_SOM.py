@@ -182,13 +182,13 @@ file.write("Final label corresponding to max Dunn for {0} chromosome : ".format(
 file.write("\n No of clusters detected automatically : " + str(K[index]))
 file.write("\n For chromosome : " + str(index))
 
-import matplotlib.pyplot as plt
-
-plt.plot(sil_score, pbm_index, 'bo')
-# plt.grid(True)
-plt.grid(True, color='0.75', linestyle='-')
-plt.xlabel('Silhouette score')
-plt.ylabel('PBM index')
-# plt.axis([0, max(return_ss), 0, max(return_pbm)])
-plt.savefig('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.jpeg')
-plt.show()
+# import matplotlib.pyplot as plt
+#
+# plt.plot(sil_score, pbm_index, 'bo')
+# # plt.grid(True)
+# plt.grid(True, color='0.75', linestyle='-')
+# plt.xlabel('Silhouette score')
+# plt.ylabel('PBM index')
+# # plt.axis([0, max(return_ss), 0, max(return_pbm)])
+# plt.savefig('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.jpeg')
+# plt.show()
