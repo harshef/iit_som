@@ -14,14 +14,14 @@ from update.update_sol import update_solution, calculatez
 from update.probability import probability
 from update.count import count_solution
 
-file = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.txt', 'w')
-file1 = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_generation_details_run1.txt',
+file = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/20/webkb_count_term_docvector_7229d_output_20.txt', 'w')
+file1 = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/20/webkb_count_term_docvector_7229d_output_generation_details_20.txt',
              'w')
 
 data = genfromtxt('new_dataset/webkb_count_term_docvector_7229d.csv', skip_header=0, usecols=range(0, 7229))
 # actual_label = genfromtxt('dataset/BBC_Sport_termcount_Normal/actual_bbc_sport_actual_label.txt', skip_header=1, usecols=(1))
 # data = apply_along_axis(lambda x: x/linalg.norm(x),1,data) # data normalization
-chromosome = 25  # Input the population size
+chromosome = 20  # Input the population size
 max_gen = 20  # Input the maximum number of generation
 max_cluster = math.floor(math.sqrt(len(data)))  ##Maximum cluster equals root(population)
 features = len(data[0])  ##Features of the input data

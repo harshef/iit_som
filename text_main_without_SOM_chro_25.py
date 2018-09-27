@@ -7,15 +7,15 @@ from cluster_validity_indices.metric import cal_pbm_index, silhouette_score, cal
 # from cluster_validity_indices.minkowski import cal_minkowski_score
 from clustering.clusternew import Kmeans_clu
 from evolution.generate import reproduction
-from mapping.matingpool import mating_pool
-from mapping.somnew import no_of_neurons, neuron_weights_init, mapping
+# from mapping.matingpool import mating_pool
+# from mapping.somnew import no_of_neurons, neuron_weights_init
 from population_creation.population import pop_create
 from update.update_sol import update_solution, calculatez
 from update.probability import probability
 from update.count import count_solution
 
-file = open('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.txt', 'w')
-file1 = open('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_generation_details_run1.txt',
+file = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/25/webkb_count_term_docvector_7229d_output_25.txt', 'w')
+file1 = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/25/webkb_count_term_docvector_7229d_output_generation_details_25.txt',
              'w')
 
 data = genfromtxt('new_dataset/webkb_count_term_docvector_7229d.csv', skip_header=0, usecols=range(0, 7229))
@@ -68,8 +68,8 @@ z = calculatez(sil_score, pbm_index)  ## Z* initialization
 # Intializations
 A = population[:]  ## Create an archive A of population
 A_K = K[:]
-C, D = no_of_neurons(chromosome)
-neu_weights, neu_weights_k = neuron_weights_init(population, D, K)
+# C, D = no_of_neurons(chromosome)
+# neu_weights, neu_weights_k = neuron_weights_init(population, D, K)
 S = population[:]
 S_K = K[:]
 v_pos = [4, 6, 8, 10]  ##size of different NNS
@@ -81,7 +81,7 @@ cn = np.zeros(len(v_pos))
 rn = np.zeros(len(v_pos))
 for t in range(0, max_gen):
 
-    neu_weights, L, neu_weights_k = mapping(S, chromosome, population, tau_init, t, max_gen, C, D, neu_weights, neu_weights_k, S_K, K, features)
+    # neu_weights, L, neu_weights_k = mapping(S, chromosome, population, tau_init, t, max_gen, C, D, neu_weights, neu_weights_k, S_K, K, features)
     # from collections import Counter
     # a = Counter(L)
     # idx = np.random.choice(chromosome, len(v_pos))
@@ -106,8 +106,8 @@ for t in range(0, max_gen):
             aa = max(enumerate(beta), key=lambda x: x[1])[0]  ##Find the index of maximum probability from the list beta
             pos = aa  ##Assign the index of maximum probability in the list 'beta' to pos
             v_nns = v_pos[aa]  ##Select the NNS size from v_pos corresponding to the maximum probability
-        m_pool, B_K = mating_pool(q, L, K, v_nns, chromosome, population)
-        y = reproduction(population, q, m_pool, K, features, data, max_cluster)
+        # m_pool, B_K = mating_pool(q, L, K, v_nns, chromosome, population)
+        y = reproduction(population, q, A, K, features, data, max_cluster)
         A, z, K_copy, lab_copy, sil_score_copy, pbm_index_copy = update_solution(y, data, A, chromosome, sil_score,
                                                                                  pbm_index, K, q, max_cluster, features,
                                                                                  lab_copy, sil_score_copy,
@@ -190,5 +190,5 @@ file.write("\n For chromosome : " + str(index))
 # plt.xlabel('Silhouette score')
 # plt.ylabel('PBM index')
 # # plt.axis([0, max(return_ss), 0, max(return_pbm)])
-# plt.savefig('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.jpeg')
+# plt.savefig('Output_without_SOM1/nips_gensin_300d/run1/nips_gensim_doc_Wordvector_300d_run1.jpeg')
 # plt.show()
