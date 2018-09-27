@@ -21,8 +21,8 @@ file1 = open('new_dataset/Output_with_SOM/webkb_count_term_docvector_7229d/run1/
 data = genfromtxt('new_dataset/webkb_count_term_docvector_7229d.csv', skip_header=0, usecols=range(0, 7229))
 # actual_label = genfromtxt('dataset/BBC_Sport_termcount_Normal/actual_bbc_sport_actual_label.txt', skip_header=1, usecols=(1))
 # data = apply_along_axis(lambda x: x/linalg.norm(x),1,data) # data normalization
-chromosome = int(input("Enter the number of chromosomes: "))  # Input the population size
-max_gen = int(input("Enter the maximum number of generation: "))  # Input the maximum number of generation
+chromosome = 25  # Input the population size
+max_gen = 20  # Input the maximum number of generation
 max_cluster = math.floor(math.sqrt(len(data)))  ##Maximum cluster equals root(population)
 features = len(data[0])  ##Features of the input data
 max_cluster_feat = max_cluster * features  ##Maximum cluster features possible

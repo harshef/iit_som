@@ -14,15 +14,15 @@ from update.update_sol import update_solution, calculatez
 from update.probability import probability
 from update.count import count_solution
 
-file = open('Output_without_SOM1/nips_gensin_300d/run1/nips_gensim_doc_Wordvector_300d_output_run1.txt', 'w')
-file1 = open('Output_without_SOM1/nips_gensin_300d/run1/nips_gensim_doc_Wordvector_300d_output_generation_details_run1.txt',
+file = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_run1.txt', 'w')
+file1 = open('new_dataset/Output_without_SOM/webkb_count_term_docvector_7229d/run1/webkb_count_term_docvector_7229d_output_generation_details_run1.txt',
              'w')
 
-data = genfromtxt('dataset/nips/nips_gensim_doc_Wordvector_300d.csv', skip_header=0, usecols=range(0, 300))
+data = genfromtxt('new_dataset/webkb_count_term_docvector_7229d.csv', skip_header=0, usecols=range(0, 7229))
 # actual_label = genfromtxt('dataset/BBC_Sport_termcount_Normal/actual_bbc_sport_actual_label.txt', skip_header=1, usecols=(1))
 # data = apply_along_axis(lambda x: x/linalg.norm(x),1,data) # data normalization
-chromosome = int(input("Enter the number of chromosomes: "))  # Input the population size
-max_gen = int(input("Enter the maximum number of generation: "))  # Input the maximum number of generation
+chromosome = 25  # Input the population size
+max_gen = 20  # Input the maximum number of generation
 max_cluster = math.floor(math.sqrt(len(data)))  ##Maximum cluster equals root(population)
 features = len(data[0])  ##Features of the input data
 max_cluster_feat = max_cluster * features  ##Maximum cluster features possible
@@ -182,13 +182,13 @@ file.write("Final label corresponding to max Dunn for {0} chromosome : ".format(
 file.write("\n No of clusters detected automatically : " + str(K[index]))
 file.write("\n For chromosome : " + str(index))
 
-import matplotlib.pyplot as plt
-
-plt.plot(sil_score, pbm_index, 'bo')
-# plt.grid(True)
-plt.grid(True, color='0.75', linestyle='-')
-plt.xlabel('Silhouette score')
-plt.ylabel('PBM index')
-# plt.axis([0, max(return_ss), 0, max(return_pbm)])
-plt.savefig('Output_without_SOM1/nips_gensin_300d/run1/nips_gensim_doc_Wordvector_300d_run1.jpeg')
-plt.show()
+# import matplotlib.pyplot as plt
+#
+# plt.plot(sil_score, pbm_index, 'bo')
+# # plt.grid(True)
+# plt.grid(True, color='0.75', linestyle='-')
+# plt.xlabel('Silhouette score')
+# plt.ylabel('PBM index')
+# # plt.axis([0, max(return_ss), 0, max(return_pbm)])
+# plt.savefig('Output_without_SOM1/nips_gensin_300d/run1/nips_gensim_doc_Wordvector_300d_run1.jpeg')
+# plt.show()
