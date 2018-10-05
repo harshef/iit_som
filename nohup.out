@@ -1,0 +1,131 @@
+Traceback (most recent call last):
+  File "text_main_with_SOM_chro_15.py", line 21, in <module>
+    data = genfromtxt('new_dataset/webkb_count_term_docvector_7229d.csv', skip_header=0, usecols=range(0, 7229))
+  File "/home/Aditya/.local/lib/python2.7/site-packages/numpy/lib/npyio.py", line 1964, in genfromtxt
+    values = split_line(line)
+  File "/home/Aditya/.local/lib/python2.7/site-packages/numpy/lib/_iotools.py", line 267, in __call__
+    return self._handyman(_decode_line(line, self.encoding))
+  File "/home/Aditya/.local/lib/python2.7/site-packages/numpy/lib/_iotools.py", line 243, in _delimited_splitter
+    return line.split(self.delimiter)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "text_main_with_SOM_chro_15.py", line 109, in <module>
+    m_pool, B_K = mating_pool(q, L, K, v_nns, chromosome, population)
+  File "/home/Aditya/iit_som/mapping/matingpool.py", line 33, in mating_pool
+    if(H[i]==L[j]): ##Step- 6 i.e if L(k1|k1,k2) = H(i), B = B U {x(k1|k1,k2)}
+IndexError: list index out of range
+--------------------generation 0 completed----------------
+--------------------generation 1 completed----------------
+--------------------generation 2 completed----------------
+--------------------generation 3 completed----------------
+--------------------generation 4 completed----------------
+--------------------generation 5 completed----------------
+--------------------generation 6 completed----------------
+--------------------generation 7 completed----------------
+--------------------generation 8 completed----------------
+--------------------generation 9 completed----------------
+--------------------generation 10 completed----------------
+--------------------generation 11 completed----------------
+--------------------generation 12 completed----------------
+--------------------generation 13 completed----------------
+--------------------generation 14 completed----------------
+--------------------generation 15 completed----------------
+--------------------generation 16 completed----------------
+--------------------generation 17 completed----------------
+--------------------generation 18 completed----------------
+--------------------generation 19 completed----------------
+Max Dunn Index :  3.642307048330518
+No of clusters detected automatically :  2
+PBM and Sil score coressponding to maximum Dunn :  286720.057983 , 0.9761175408872461
+--------------------generation 0 completed----------------
+--------------------generation 1 completed----------------
+--------------------generation 2 completed----------------
+--------------------generation 3 completed----------------
+--------------------generation 4 completed----------------
+--------------------generation 5 completed----------------
+--------------------generation 6 completed----------------
+--------------------generation 7 completed----------------
+--------------------generation 8 completed----------------
+--------------------generation 9 completed----------------
+--------------------generation 10 completed----------------
+--------------------generation 11 completed----------------
+--------------------generation 12 completed----------------
+--------------------generation 13 completed----------------
+--------------------generation 14 completed----------------
+--------------------generation 15 completed----------------
+--------------------generation 16 completed----------------
+--------------------generation 17 completed----------------
+--------------------generation 18 completed----------------
+--------------------generation 19 completed----------------
+Max Dunn Index :  0.1012824435699449
+No of clusters detected automatically :  4
+PBM and Sil score coressponding to maximum Dunn :  77499.5557806 , 0.5998503688508993
+--------------------generation 0 completed----------------
+--------------------generation 1 completed----------------
+--------------------generation 2 completed----------------
+--------------------generation 3 completed----------------
+--------------------generation 4 completed----------------
+--------------------generation 5 completed----------------
+--------------------generation 6 completed----------------
+--------------------generation 7 completed----------------
+--------------------generation 8 completed----------------
+--------------------generation 9 completed----------------
+--------------------generation 10 completed----------------
+--------------------generation 11 completed----------------
+--------------------generation 12 completed----------------
+--------------------generation 13 completed----------------
+--------------------generation 14 completed----------------
+--------------------generation 15 completed----------------
+--------------------generation 16 completed----------------
+--------------------generation 17 completed----------------
+--------------------generation 18 completed----------------
+--------------------generation 19 completed----------------
+Max Dunn Index :  0.10529752942737187
+No of clusters detected automatically :  3
+PBM and Sil score coressponding to maximum Dunn :  132657.600856 , 0.6580990870050644
+--------------------generation 0 completed----------------
+--------------------generation 1 completed----------------
+--------------------generation 2 completed----------------
+--------------------generation 3 completed----------------
+--------------------generation 4 completed----------------
+--------------------generation 5 completed----------------
+--------------------generation 6 completed----------------
+--------------------generation 7 completed----------------
+--------------------generation 8 completed----------------
+--------------------generation 9 completed----------------
+--------------------generation 10 completed----------------
+--------------------generation 11 completed----------------
+--------------------generation 12 completed----------------
+--------------------generation 13 completed----------------
+--------------------generation 14 completed----------------
+--------------------generation 15 completed----------------
+--------------------generation 16 completed----------------
+--------------------generation 17 completed----------------
+--------------------generation 18 completed----------------
+--------------------generation 19 completed----------------
+Max Dunn Index :  0.10529752942737187
+No of clusters detected automatically :  3
+PBM and Sil score coressponding to maximum Dunn :  132657.600856 , 0.6580990870050644
+--------------------generation 0 completed----------------
+--------------------generation 1 completed----------------
+--------------------generation 2 completed----------------
+--------------------generation 3 completed----------------
+--------------------generation 4 completed----------------
+--------------------generation 5 completed----------------
+--------------------generation 6 completed----------------
+--------------------generation 7 completed----------------
+--------------------generation 8 completed----------------
+--------------------generation 9 completed----------------
+--------------------generation 10 completed----------------
+--------------------generation 11 completed----------------
+--------------------generation 12 completed----------------
+--------------------generation 13 completed----------------
+--------------------generation 14 completed----------------
+--------------------generation 15 completed----------------
+--------------------generation 16 completed----------------
+--------------------generation 17 completed----------------
+--------------------generation 18 completed----------------
+--------------------generation 19 completed----------------
+Max Dunn Index :  0.09837387536759296
+No of clusters detected automatically :  43
+PBM and Sil score coressponding to maximum Dunn :  849.174826377 , 0.3463308444515867
